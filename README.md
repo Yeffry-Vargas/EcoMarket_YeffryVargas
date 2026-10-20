@@ -1,7 +1,7 @@
 ## EcoMarket
 
 Tienda en línea de productos ecológicos, reutilizables y sustentables.
-Proyecto desarrollado con HTML5 semántico y CSS3 puro (sin JavaScript).
+Proyecto desarrollado con HTML y CSS.
 
 ## Tecnologías
 - HTML5
