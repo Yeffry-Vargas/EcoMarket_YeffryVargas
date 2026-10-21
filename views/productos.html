@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | EcoMarket </title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor header__barra">
+            <a href="../index.html" class="logo"> 🌿 EcoMarket</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton" aria-label="Abrir menu">≡</label>
+
+            <nav class="nav" aria-label="Navegcion principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="activo">Productos</a></li>
+                    <li><a href="../views/sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="../views/contacto.html">Contactanos</a></li>
+                </ul>
+            </nav>
+
+            <div class="accesos">
+                <a href="productos.html" aria-label="Bucar">🔍</a>
+                <a href="#" aria-label="Carrito">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor catalogo">
+        <h1 class="titulo-pagina">Nuestros productos</h1>
+
+        <div class="buscador">
+            <input type="search" placeholder="Buscar productos ecológicos..." aria-label="Buscar productos">
+            <button type="button">🔍</button>
+        </div>
+
+        <fieldset>
+            <legend>Categorias</legend>
+            <label><input type="checkbox"> Hogar</label>
+            <label><input type="checkbox"> Moda</label>
+            <label><input type="checkbox"> Cuidado personal</label>
+            <label><input type="checkbox"> Alimentos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rango de precio</legend>
+            <input type="range" min="0" max="200000" step="5000" value="100000" aria-label="Precio Maximo">
+            <small>$ 0-200.000</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidad</legend>
+          <label><input type="checkbox"> En stock</label>
+          <label><input type="checkbox"> Agotado</label>
+        </fieldset>
+      </aside>
+
+      <section class="productos">
+        <div class="grid-productos">
+
+          <article class="card" id="prod-1">
+            <img src="../img/products/Cepillo_bambú.jpg" alt="Cepillo de bambú" loading="lazy">
+            <div class="card__cuerpo">
+              <h3>Cepillo de bambú</h3>
+              <p class="precio">$ 12.000</p>
+              <span class="etiqueta etiqueta--stock">En stock</span>
+              <a href="#prod-1" class="favorito" aria-label="Agregar a favoritos">Favoritos</a>
+            </div>
+          </article>
+      </section>
+    </main>
+</body>
+</html>
