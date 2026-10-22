@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
             <a href="../index.html" class="logo"> 🌿 EcoMarket</a>
 
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-boton" aria-label="Abrir menu">≡</label>
+            <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">≡</label>
 
             <nav class="nav" aria-label="Navegcion principal">
                 <ul>
@@ -34,36 +34,41 @@
         </div>
     </header>
 
-    <main class="contenedor catalogo">
-        <h1 class="titulo-pagina">Nuestros productos</h1>
+<main class="contenedor catalogo">
+    <h1 class="titulo-pagina">Nuestros productos</h1>
 
-        <div class="buscador">
-            <input type="search" placeholder="Buscar productos ecológicos..." aria-label="Buscar productos">
-            <button type="button">🔍</button>
-        </div>
+    <div class="buscador">
+        <input type="search" placeholder="Buscar productos ecológicos..." aria-label="Buscar productos">
+        <button type="button" aria-label="Buscar">🔍</button>
+    </div>
 
-        <fieldset>
-            <legend>Categorias</legend>
-            <label><input type="checkbox"> Hogar</label>
-            <label><input type="checkbox"> Moda</label>
-            <label><input type="checkbox"> Cuidado personal</label>
-            <label><input type="checkbox"> Alimentos</label>
-        </fieldset>
+    <div class="catalogo__layout">
 
-        <fieldset>
-            <legend>Rango de precio</legend>
-            <input type="range" min="0" max="200000" step="5000" value="100000" aria-label="Precio Maximo">
-            <small>$ 0-200.000</small>
-        </fieldset>
+        <aside class="filtros" aria-label="Filtros">
+            <h2>Filtros</h2>
 
-        <fieldset>
-          <legend>Disponibilidad</legend>
-          <label><input type="checkbox"> En stock</label>
-          <label><input type="checkbox"> Agotado</label>
-        </fieldset>
-      </aside>
+            <fieldset>
+                <legend>Categorías</legend>
+                <label><input type="checkbox"> Hogar</label>
+                <label><input type="checkbox"> Moda</label>
+                <label><input type="checkbox"> Cuidado personal</label>
+                <label><input type="checkbox"> Alimentos</label>
+            </fieldset>
 
-      <section class="productos">
+            <fieldset>
+                <legend>Rango de precio</legend>
+                <input type="range" min="0" max="200000" step="5000" value="100000" aria-label="Precio máximo">
+                <small>$0 - $200.000</small>
+            </fieldset>
+
+            <fieldset>
+                <legend>Disponibilidad</legend>
+                <label><input type="checkbox"> En stock</label>
+                <label><input type="checkbox"> Agotado</label>
+            </fieldset>
+        </aside>
+
+        <section class="productos">
         <div class="grid-productos">
 
           <article class="card" id="prod-1">
@@ -72,10 +77,244 @@
               <h3>Cepillo de bambú</h3>
               <p class="precio">$ 12.000</p>
               <span class="etiqueta etiqueta--stock">En stock</span>
-              <a href="#prod-1" class="favorito" aria-label="Agregar a favoritos">Favoritos</a>
+              <a href="#prod-1" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
             </div>
           </article>
+
+          <article class="card" id="prod-2">
+            <img src="../img/products/botella_reutilizable.webp" alt="Botella reutilizable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Botella reutilizable</h3>
+                <p class="precio">$ 18.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-2" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+            <article class="card" id="prod-3">
+            <img src="../img/products/Atomizador_de_vidrio_rellenable.jpg" alt="Atomizador de vidrio rellenable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Atomizador de vidrio rellenable</h3>
+                <p class="precio">$ 20.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-3" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-4">
+            <img src="../img/products/Bolas_de_lana_reutilizables_para_secadora.jpg" alt="Bolas de lana reutilizable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Bolas de lana reutilizable</h3>
+                <p class="precio">$ 15.000</p>
+                <span class="etiqueta etiqueta--stock">Agotado</span>
+                <a href="#prod-4" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-5">
+            <img src="../img/products/Bolsas_de_malla_para_frutas_o_verduras.jpg" alt="Bolsa de malla para frutas/verduras" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Bolsa de malla para frutas/verduras</h3>
+                <p class="precio">$ 12.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-5" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-6">
+            <img src="../img/products/Bolsas_de_silicona_reutilizables.jpg" alt="Bolsas de silicona reutilizable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Bolsas de silicona reutilizable</h3>
+                <p class="precio">$ 25.000</p>
+                <span class="etiqueta etiqueta--stock">Agotado</span>
+                <a href="#prod-6" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-7">
+            <img src="../img/products/Bolsas_tela_reutilizable.jpg" alt="Bolsas de tela reutilizable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Bolsas de tela reutilizable</h3>
+                <p class="precio">$ 15.500</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-7" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-8">
+            <img src="../img/products/Cubiertos_reutilizables_de_bambú.jpg" alt="Cubietos de bambú reutilizables" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Cubietos de bambú reutilizables</h3>
+                <p class="precio">$ 26.700</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-8" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-9">
+            <img src="../img/products/Cubos_de_acero_inoxidable_para_enfriar_bebidas.jpg" alt="Cubos de acero inoxidable para bebidas" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Cubos de acero inoxidable para bebidas</h3>
+                <p class="precio">$ 35.000</p>
+                <span class="etiqueta etiqueta--stock">Agotado</span>
+                <a href="#prod-9" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-10">
+            <img src="../img/products/Discos_desmaquillantes_lavables.jpg" alt="Discos desmaquillantes lavables" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Discos desmaquillantes lavables</h3>
+                <p class="precio">$ 20.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-10" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-11">
+            <img src="../img/products/Dispensador_rellenable_de_jabón.jpg" alt="Dispensador rellenable de jabón" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Dispensador rellenable de jabón</h3>
+                <p class="precio">$ 21.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-11" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-12">
+            <img src="../img/products/Envoltorio_reutilizable_para_sándwiches.jpg" alt="Envoltorio reutilizable para sándwiches" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Envoltorio reutilizable para sándwiches</h3>
+                <p class="precio">$ 22.200</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-12" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-13">
+            <img src="../img/products/Envoltorios_de_cera_de_abeja.jpg" alt="Envoltorios de cera de abeja" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Envoltorios de cera de abeja</h3>
+                <p class="precio">$ 26.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-13" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-14">
+            <img src="../img/products/Esponja_vegetal_de_luffa.jpg" alt="Esponja vegetal de luffa" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Esponja vegetal de luffa</h3>
+                <p class="precio">$ 21.200</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-14" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-15">
+            <img src="../img/products/Lonchera_de_acero_inoxidable.jpg" alt="Lonchera de acero inoxidable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Lonchera de acero inoxidable</h3>
+                <p class="precio">$ 31.000</p>
+                <span class="etiqueta etiqueta--stock">Agotado</span>
+                <a href="#prod-15" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-16">
+            <img src="../img/products/Paños_de_limpieza_reutilizables.jpg" alt="Paños de limpieza reutilizables" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Paños de limpieza reutilizables</h3>
+                <p class="precio">$ 32.900</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-16" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-17">
+            <img src="../img/products/Pitillos_acero_inoxidable.jpg" alt="Pitillos de acero inoxidable" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Pitillos de acero inoxidable</h3>
+                <p class="precio">$ 38.200</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-17" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-18">
+            <img src="../img/products/Tapas_de_silicona_reutilizables.jpg" alt="Tapas de silicona reutilizables" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Tapas de silicona reutilizables</h3>
+                <p class="precio">$ 27.700</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-18" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-19">
+            <img src="../img/products/Tapete_de_silicona_para_hornear.jpg" alt="Tapete de silicona para hornear" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Tapete de silicona para hornear</h3>
+                <p class="precio">$ 30.000</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-19" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+
+          <article class="card" id="prod-20">
+            <img src="../img/products/Vaso_reutilizable_para_café.jpg" alt="Vaso reutilizable para café" loading="lazy">
+            <div class="card__cuerpo">
+                <h3>Vaso reutilizable para café</h3>
+                <p class="precio">$ 35.950</p>
+                <span class="etiqueta etiqueta--stock">En stock</span>
+                <a href="#prod-20" class="favorito" aria-label="Agregar a favoritos">Favorito</a>
+            </div>
+          </article>
+        </div>
+
+        <nav class="paginacion" aria-label="Paginación">
+            <a href="#" class="paginacion__control">« Anterior</a>
+            <a href="#" class="paginacion__num activo">1</a>
+            <a href="#" class="paginacion__num">2</a>
+            <a href="#" class="paginacion__num">3</a>
+            <a href="#" class="paginacion__control">Siguiente »</a>
+        </nav>
+
       </section>
-    </main>
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+            <div>
+                <h3>🌿 EcoMarket</h3>
+                <p>Productos ecológicos para una vida más sostenible.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>superEcoMarket@.com</p>
+                <p>+57 300 123 456</p>
+                <p>Bucaramanga, Colombia</p>
+            </div>
+            
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="*">Términos y condiciones</a></li>
+                    <li><a href="*">Politica de privacidad</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Síguemos</h3>
+                <ul>
+                    <li><a href="*">Intagram</a></li>
+                    <li><a href="*">Facebook</a></li>
+                    <li><a href="*">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
