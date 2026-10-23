@@ -1,0 +1,63 @@
+/* ========== KEYFRAMES ========== */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.15); }
+}
+
+
+.hero__contenido,
+.historia__texto,
+.formulario {
+  animation: aparecer 0.8s ease-out both;
+}
+
+.card,
+.principios__lista li {
+  animation: aparecer 0.6s ease-out both;
+}
+
+
+.principios__lista li,
+.testimonio {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principios__lista li:hover,
+.testimonio:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--sombra-hover);
+}
+
+
+.redes a {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.25);
+  background-color: var(--verde-claro);
+}
+
+.card:target .favorito {
+  animation: latido 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
