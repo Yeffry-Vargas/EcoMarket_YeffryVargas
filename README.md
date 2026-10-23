@@ -70,9 +70,10 @@ No requiere instalación ni dependencias.
 ## 📸 Capturas de pantalla
 
 ### Escritorio
-
-
-### Móvil
+<img width="911" height="458" alt="image" src="https://github.com/user-attachments/assets/4f7c8892-8b19-4573-a97c-c57c9d58d2f9" />
+<img width="908" height="453" alt="image" src="https://github.com/user-attachments/assets/1eafe658-539d-464d-9706-cfeff5ba63a3" />
+<img width="908" height="456" alt="image" src="https://github.com/user-attachments/assets/527f0545-572f-4578-a34c-9baf04686b67" />
+<img width="911" height="453" alt="image" src="https://github.com/user-attachments/assets/1615c166-162b-4358-8c6e-61c00ccb9f24" />
 
 
 ## 🔀 Flujo de trabajo Git
